@@ -1,0 +1,21 @@
+.flex-container{
+    display:flex;
+    height:1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+#blueblock{
+    background-color: blue;
+    width:800px;
+    height:800px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#redblock{
+    background-color: red;
+    width:200px;
+    height:200px;
+}
