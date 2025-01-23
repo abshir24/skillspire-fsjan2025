@@ -1,0 +1,37 @@
+.container{
+    border:solid black 2px;
+    display:flex;
+}
+
+#center{
+    justify-content: center;
+}
+
+#right{
+    justify-content:right;
+}
+
+#blue-box{
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#red-box{
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#green-box{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin-top:10px;
+    margin-bottom:10px;
+    margin-right:20px;
+}

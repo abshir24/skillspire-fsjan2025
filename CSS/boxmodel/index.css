@@ -1,0 +1,29 @@
+body{
+    background-color:blue;
+}
+
+div{
+    border-radius: 20px;
+    text-align:center;
+}
+
+.header-footer{
+    width:98%;
+    height: 80px;
+}
+
+#side-nav{
+    width: 18%;
+    height:35%;
+    background-color:#26c1c1;
+    display: inline-block;
+}
+
+#body{
+    width:77%;
+    height:700px;
+    margin-left: 55px;
+    background-color:black;
+    color:white;
+    display:inline-block;
+}
