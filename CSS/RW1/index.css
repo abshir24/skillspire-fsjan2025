@@ -1,0 +1,108 @@
+body{
+    background-color:#f2f4f7;
+}
+
+/* div{
+    outline:dotted 2px red;
+} */
+
+.container{
+    height:800px;
+    display:flex;
+    justify-self: center;
+    align-items: center;
+}
+
+#connect{
+    width: 490px;
+    height: 496px;
+    display:flex;
+    align-items: center;
+}
+
+#connect h2{
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    line-height: 32px;
+    font-size:28px;
+    font-weight: normal;
+    margin-left:30px;
+    margin-top:0px;
+}
+
+#form{
+    width: 490px;
+    height: 496px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#form form{
+    width:396px;
+    height:316px;
+    background: white;
+    padding-top:10px;
+    padding-bottom:24px;
+    border-radius:10px;
+}
+
+input{
+    width: 364px;
+    height: 52px;
+    margin-left: 15px;
+    border-radius:5px;
+    border: 1px solid #dddfe2;
+    padding: 14px 16px 14px 16px;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+#login{
+    background-color: #0866fe;
+    font-size: 19px;
+    color: white;
+    font-weight:600;
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+#logo{
+    width:320px;
+    height:106px;
+}
+
+#anchor{
+    text-align:center;
+}
+
+#anchor a{
+    color: #0866ff;
+    font-size:14px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+}
+
+hr{
+    width: 364px;
+    background-color: #dddfe2;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+#create-container{
+    display:flex;
+    justify-content: center;
+}
+
+#create-account{
+    width:180px;
+    height:48px;
+    padding: 0px 16px 0px 16px;
+    background-color: #42b72a;
+    font-size: 16px;
+    color: white;
+    border:none;
+    font-family:SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    border-radius:5px;
+}
