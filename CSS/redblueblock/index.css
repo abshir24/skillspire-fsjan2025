@@ -1,21 +1,23 @@
 .flex-container{
-    display:flex;
+    outline:dotted red 2px;
     height:1000px;
+    display:flex;
     justify-content: center;
     align-items: center;
 }
 
-#blueblock{
+
+.blue-block{
     background-color: blue;
-    width:800px;
-    height:800px;
+    width: 600px;
+    height: 600px;
     display:flex;
     justify-content: center;
     align-items:center;
 }
 
-#redblock{
+.red-block{
     background-color: red;
-    width:200px;
-    height:200px;
+    width: 100px;
+    height: 100px;
 }
