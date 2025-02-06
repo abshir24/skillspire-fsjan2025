@@ -1,8 +1,13 @@
-let numbers = [1,2,3,4,5]
 
-numbers.push(6)
 
-// console.log(numbers)
+function test(callback){
+    console.log("This is the parent function")
+}
+
+test(function(){
+    console.log("this is the callback")
+})
+
 
 
 
