@@ -1,17 +1,20 @@
-number = 5
+for i in range(1,6):
+    print(i)
 
-floating_point = 5.5 
 
-strings = "This is a string"
+array = [1,2,3,4,5]
 
-strings += strings 
+for number in array:
+    print( number )
 
-boolean = True
+for i in range(0, len(array)):
+    print( array[i] )
 
-list = [1,"string",True,[]]
 
-dictionary = {
-    "number" : 0
-}
+count = 1
 
-print( dictionary["number"] )
+while count <= 3:
+    print(count)
+    count+=1
+
+

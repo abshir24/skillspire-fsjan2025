@@ -1,15 +1,10 @@
-var number = 5
-
-if(number == 5){
-    console.log(number)
+for(let i = 1;i<=5;i++){
+    console.log(i)
 }
 
-array = [1,"string",true,[]]
+let array = [1,2,3,4,5]
+console.log( array.length )
 
-console.log( array[0] )
-
-object = {
-    "number" : 0
+for( let i = 0 ;i<array.length; i++){
+    console.log(array[i])
 }
-
-console.log( object['number'] ) 
