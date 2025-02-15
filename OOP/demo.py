@@ -1,14 +1,11 @@
-class Car:
-    make = "Tesla"
-    model = "Cyber Truck"
-    cost = 80000
+class Car:  
+    def __init__(self,make,model,cost):
+        self.make = make
+        self.model = model
+        self.cost = cost
 
-    def printCarInfo(self):
-        print(f"Make:{ self.make } Model: {self.model} Cost:{self.cost}")
+cyberTruck = Car("Telsa","Cyber Truck",80000)
 
-cyberTruck1 = Car()
-cyberTruck2 = Car()
-cyberTruck3 = Car()
+mustang = Car("Ford","Mustang",40000)
 
 
-cyberTruck1.printCarInfo()
