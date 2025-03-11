@@ -1,0 +1,59 @@
+<h1>Hello World</h1>
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<form action ='/login' method ="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name"><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email"><br>
+
+    <label>Password</label><br>
+    <input type="password" name="password"><br>
+    
+    <input type="submit" value="Submit">
+</form> 
+
+<h1> User Table: </h1>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Date Created</th>
+        <th>Actions</th>
+    </tr>
+    {% for user in all_users %}
+    <tr>
+        <td>{{ user.id }}</td>
+        <td>{{ user.name }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.password }}</td>
+        <td>{{ user.date_created }}</td>
+        <td>
+            <a href ="/edit/{{user.id}}">Update</a>
+            <a href ="/delete/{{user.id}}">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
