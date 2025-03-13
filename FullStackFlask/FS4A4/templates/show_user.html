@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Show User</title>
+    </head>
+
+    <body>
+        <h1>User {{ user.id }}</h1>
+        <h3>Full Name: {{ user.name }}</h3>
+        <h3>Email: {{ user.email }}</h3>
+        <h3>Created At: {{ user.created_at }}</h3>
+
+        <a href="/users/{{ user.id }}/edit">Edit</a>
+        <a href="/users/{{ user.id }}/delete">Delete</a>
+        <a href="/users">Back</a>
+    </body>
+</html>
