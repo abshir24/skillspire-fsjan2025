@@ -1,5 +1,16 @@
-class Customer {
-    constructor(firstName, lastName){
+class Person {
+    constructor(age){
+        this.age = age
+    }
+
+    printAge(){
+        console.log(`Age: ${this.age}`)
+    }
+}
+
+class Customer extends Person {
+    constructor(firstName, lastName,age){
+        super(age)
         this.firstName = firstName
         this.lastName = lastName
     }
@@ -9,6 +20,7 @@ class Customer {
     }
 }
 
-const firstCustomer = new Customer("Tom", "Hanks")
+const firstCustomer = new Customer("Tom", "Hanks",35)
 
-firstCustomer.getFullName()
+firstCustomer.printAge()
+
