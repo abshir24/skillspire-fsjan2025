@@ -1,25 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+// import Test from './components/Test'
+// import ElementRenderer from './components/ElementRenderer';
+import ParentComponent from './components/ParentComponent';
 
-function HelloWorld(){
-  return <h1>Hello World React!</h1>
-}
-
-function PersonalDetails(){
+function App(){
   return (
     <div>
-      <h1>Name: Abshir</h1>
-      <h1>Food: Tikka Masala</h1>
-      <h1>Vacation Destination: Tulum</h1>
-    </div>
-  )
-}
-
-function App() {
-  return (
-    <div>
-      <HelloWorld />
-      <PersonalDetails />
+        <h1>App Component:</h1>
+        <ParentComponent />
     </div>
   );
 }
