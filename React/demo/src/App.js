@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import Test from './components/Test'
+import Counter from './components/Counter'
 // import ElementRenderer from './components/ElementRenderer';
 // import ParentComponent from './components/ParentComponent';
 // import ButtonClick from './components/ButtonClick';
@@ -12,7 +12,7 @@ function App(){
   return (
     <div>
         <h1>App Component:</h1>
-        <Test />
+        <Counter />
     </div>
   );
 }
