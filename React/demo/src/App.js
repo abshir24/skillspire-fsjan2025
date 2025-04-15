@@ -9,20 +9,16 @@ import Students from './components/Students';
 import Student from './components/Student';
 // import ListRenderer from './components/ListRenderer';
 //import A11 from "./components/A11"
-
 // import Food from './components/Food';
 // import Vacation from './components/Vacation';
+import A14 from './components/A14';
 
 
 function App(){
   return (
-    <Router>
-        <Routes>
-            <Route path='/' element={<Students />} />
-            <Route path='/item/:id' element={ <Student />}/>
-        </Routes>
-    </Router> 
+    <A14 />
   );
 }
 
 export default App;
+
