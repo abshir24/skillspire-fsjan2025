@@ -1,12 +1,23 @@
-const getData = (request,response)=>{
-    response.send({"status":[1,2,3,4,5]})
+const User = require('../models/User')
+
+const addUser = (request,response) =>{
+    const newUser = new User(request.body)
+
+    newUser.save()
+        .then((user)=>{
+            console.log("The User was added successfully")
+            response.json(user)
+        })
+        .catch((err) => console.log(err))
 }
 
-const postData = (request,response)=>{
-    console.log("POST DATA: ", request.body )
+const getAllUsers = async (request,response)=>{
+    let allUsers = await User.find() //[<User>, <User>]
+
+    response.json(allUsers)
 }
 
 module.exports = {
-    getData,
-    postData
+   addUser,
+   getAllUsers
 }
