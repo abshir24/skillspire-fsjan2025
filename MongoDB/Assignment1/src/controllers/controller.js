@@ -12,7 +12,7 @@ const addBook = (request,response) =>{
 }
 
 const getAllBooks = async (request,response) =>{
-    const allBooks = await Book.find()
+    const allBooks = await Book.find() //[<Book>,<Book>,<Book>]
 
     response.json(allBooks)
 }
@@ -25,8 +25,30 @@ const getBookById = async (request,response) =>{
         .catch((err) => console.log(err))
 }
 
+
+const updateBook = async (request,response) =>{
+    let id = request.params.id
+
+    Book.findByIdAndUpdate(id, request.body, { new:true })
+        .then((book) => response.send(book))
+        .catch((err) => console.log(err))
+}
+
+const deleteBook = async (request,response) =>{
+    let id = request.params.id
+
+    Book.findByIdAndDelete(id)
+        .then((book) =>{
+            console.log("Book was deleted successfully")
+            response.json(book)
+        })
+        .catch((err) => console.log(err))
+}
+
 module.exports = {
     addBook,
     getAllBooks,
-    getBookById
+    getBookById,
+    updateBook,
+    deleteBook
 }
