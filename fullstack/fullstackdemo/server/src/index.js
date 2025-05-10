@@ -12,7 +12,7 @@ app.use('/',router)
 
 const port = 8000
 
-const connectionString = "mongodb+srv://abshirtech24:yrdNw2DsHC1mM3YX@cluster0.jcmlqkv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const connectionString = ""
 
 mongoose.connect(connectionString)
 .then(()=>{
