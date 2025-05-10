@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { getBooks, addBook } from '../api/api'
+import { getBooks, addBook, deleteBook } from '../api/api'
+import { Link } from 'react-router-dom'
 
 function BookList(){
     const [books,setBooks] = useState(null)
@@ -27,6 +28,10 @@ function BookList(){
         console.log("Response from DB", response.data)
     }
 
+    const deleteSelectedBook = async (id) =>{
+        await deleteBook(id)
+    }
+
     if(books == null) return "No books"
 
     return <div>
@@ -43,6 +48,7 @@ function BookList(){
                 <th>Id</th>
                 <th>Title</th>
                 <th>Author</th>
+                <th>Action</th>
             </tr>
 
             {
@@ -51,6 +57,10 @@ function BookList(){
                         <td>{book._id}</td>
                         <td>{book.title}</td>
                         <td>{book.author}</td>
+                        <td>
+                            <Link to={`/edit/${book._id}`}>Edit</Link>
+                            <Link onClick={() =>{deleteSelectedBook(book._id)}}>Delete</Link>
+                        </td>
                     </tr>
                 ))
             }
